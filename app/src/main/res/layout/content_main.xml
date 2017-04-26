@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+    <ImageView
+        android:id="@+id/imgNihongo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/img_paddingLeft"
+        android:paddingRight="@dimen/img_paddingRight"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logomin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgNihongo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_vertical_marginrightleft"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llCurrentLesson"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_height_currentLesson"
+            android:background="@drawable/bg_textview_current_lesson"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_pen" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Current Lesson:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCurrentLesson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Lesson 1"
+                    android:textStyle="italic" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/activity_vertical_margintop" />
+
+        <Button
+            android:id="@+id/btnLearn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_button_main_height"
+            android:text="learn" />
+
+        <Button
+            android:id="@+id/btnPractice"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_button_main_height"
+            android:text="pratice" />
+        <Button
+            android:id="@+id/btnListeningPractice"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_button_main_height"
+            android:text="improve listening skill" />
+        <Button
+            android:id="@+id/btnExam"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_button_main_height"
+            android:text="improve remembering skill" />
+
+        <Button
+            android:id="@+id/btnExamComplex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_button_main_height"
+            android:text="general test" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

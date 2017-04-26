@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "215131148738",
+    "firebase_url": "https://learnjapanesevocabulary.firebaseio.com",
+    "project_id": "learnjapanesevocabulary",
+    "storage_bucket": "learnjapanesevocabulary.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215131148738:android:4625873888f01777",
+        "android_client_info": {
+          "package_name": "com.example.user.learnjapanesevocabulary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215131148738-45hc0rgb6fj8sg0fper62sbhmkgvpb13.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.learnjapanesevocabulary",
+            "certificate_hash": "1d450b8b5af2d294f177f1dfc3d4e8de0d9daf73"
+          }
+        },
+        {
+          "client_id": "215131148738-suhd0ugadefo49da2q8nbetbos97fvfn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIpGjWMANC_FinLRbnY9s6LaiA_Cmzcck"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215131148738-suhd0ugadefo49da2q8nbetbos97fvfn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

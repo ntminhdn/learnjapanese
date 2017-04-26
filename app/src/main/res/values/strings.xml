@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">LearnJapaneseVocabulary</string>
+    <string name="download">Download</string>
+    <string name="extract">Extract</string>
+    <string name="lesson">Lesson</string>
+    <string name="checking_data">Checking data...</string>
+
+
+    <string-array name="lesson_version">
+        <item>lesson 1</item>
+        <item>lesson 2</item>
+        <item>lesson 3</item>
+        <item>lesson 4</item>
+        <item>lesson 5</item>
+        <item>lesson 6</item>
+        <item>lesson 7</item>
+        <item>lesson 8</item>
+        <item>lesson 9</item>
+        <item>lesson 10</item>
+        <item>lesson 11</item>
+        <item>lesson 12</item>
+        <item>lesson 13</item>
+        <item>lesson 14</item>
+        <item>lesson 15</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>
