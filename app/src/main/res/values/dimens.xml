@@ -10,7 +10,7 @@
     <dimen name="activity_button_main_height">50dp</dimen>
 
     <dimen name="activity_vertical_margintop">15dp</dimen>
-    <dimen name="activity_vertical_marginrightleft">170dp</dimen>
+    <dimen name="activity_vertical_marginrightleft">120dp</dimen>
 
     <dimen name="img_paddingLeft">10dp</dimen>
     <dimen name="img_paddingRight">10dp</dimen>

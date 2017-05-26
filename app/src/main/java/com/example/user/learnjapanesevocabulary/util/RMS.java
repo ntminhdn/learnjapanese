@@ -14,9 +14,9 @@ public class RMS {
     private final String LAUNCH_APP = "launch_app";
 
     private Context mContext;
-    private SharedPreferences mSharePreference;
+    public SharedPreferences mSharePreference;
     private static RMS sInstance;
-    private int mVersionApp = 0;
+    private int mVersionApp = 1;
     private int mCurrentLessonIndex = 1;
     private int mLaunch_app = 0;
 
