@@ -30,6 +30,7 @@ import com.example.user.learnjapanesevocabulary.model.Lesson;
 import com.example.user.learnjapanesevocabulary.model.Version;
 import com.example.user.learnjapanesevocabulary.model.Vocabulary;
 import com.example.user.learnjapanesevocabulary.model.VocabularyObject;
+import com.example.user.learnjapanesevocabulary.practice.PracticeActivity;
 import com.example.user.learnjapanesevocabulary.util.RMS;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private View mTempViewLesson;
     private NavigationView mNavigationView;
     private ArrayList<Lesson> data = new ArrayList<>();
-    private Button btnLearn;
+    private Button btnLearn, btnPractice;
     private Realm realm;
     private RMS rms;
 
@@ -137,6 +138,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                }
 //                System.out.println(c);
 
+                break;
+
+            case R.id.btnPractice:
+                Intent intent2 = new Intent(MainActivity.this, PracticeActivity.class);
+                startActivity(intent2);
                 break;
         }
     }
@@ -252,6 +258,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mNavigationView = (NavigationView) findViewById(R.id.navView);
         btnLearn = (Button) findViewById(R.id.btnLearn);
         btnLearn.setOnClickListener(this);
+        btnPractice = (Button) findViewById(R.id.btnPractice);
+        btnPractice.setOnClickListener(this);
     }
 
     @Override
