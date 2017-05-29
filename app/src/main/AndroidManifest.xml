@@ -18,8 +18,8 @@
         </activity>
 
         <activity android:name=".learn.LearnActivity" android:label="Learning" />
-        <activity android:name=".practice.PracticeActivity" />
-        <activity android:name=".listening.ListeningActivity" />
+        <activity android:name=".practice.PracticeActivity" android:label="Practice" />
+        <activity android:name=".listening.ListeningActivity" android:label="Listening" />
         <activity android:name=".exam.ExamActivity" />
         <activity android:name=".examcomplex.ExamComplexActivity" />
     </application>

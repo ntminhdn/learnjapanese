@@ -32,4 +32,5 @@
     <dimen name="item_practice_character_height">130dp</dimen>
     <dimen name="item_practice_character_size">100dp</dimen>
     <dimen name="item_practice_voice_size">40dp</dimen>
+
 </resources>
