@@ -12,6 +12,7 @@ public class RMS {
     private final String VERSION_APP = "version";
     private final String CURRENT_LESSON_INDEX = "currentLessonIndex";
     private final String LAUNCH_APP = "launch_app";
+    private final String DIALOG_STATUS = "dialog_status";
 
     private Context mContext;
     public SharedPreferences mSharePreference;
@@ -19,6 +20,7 @@ public class RMS {
     private int mVersionApp = 1;
     private int mCurrentLessonIndex = 1;
     private int mLaunch_app = 0;
+    private boolean dialogStatus = false;  //dialog unchecked.
 
     public static RMS getInstance() {
         if (sInstance == null) {
@@ -36,6 +38,11 @@ public class RMS {
         mVersionApp = mSharePreference.getInt(VERSION_APP, mVersionApp);
         mCurrentLessonIndex = mSharePreference.getInt(CURRENT_LESSON_INDEX, mCurrentLessonIndex);
         mLaunch_app = mSharePreference.getInt(LAUNCH_APP, mLaunch_app);
+        dialogStatus = mSharePreference.getBoolean(DIALOG_STATUS, dialogStatus);
+    }
+
+    public boolean getDialogStatus() {
+        return dialogStatus;
     }
 
     public int getVersionApp() {
@@ -66,6 +73,13 @@ public class RMS {
         mVersionApp = version;
         SharedPreferences.Editor editor = mSharePreference.edit();
         editor.putInt(VERSION_APP, mVersionApp);
+        editor.commit();
+    }
+
+    public void saveDialogStatus(boolean status) {
+        dialogStatus = status;
+        SharedPreferences.Editor editor = mSharePreference.edit();
+        editor.putBoolean(DIALOG_STATUS, dialogStatus);
         editor.commit();
     }
 

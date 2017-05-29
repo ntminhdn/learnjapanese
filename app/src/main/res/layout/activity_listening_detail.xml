@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvQuestionNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvCountDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/btnAnswer1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/btnAnswer2"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btnAnswer3"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+</LinearLayout>

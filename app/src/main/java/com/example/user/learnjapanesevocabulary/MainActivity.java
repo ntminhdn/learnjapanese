@@ -26,6 +26,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.user.learnjapanesevocabulary.learn.LearnActivity;
+import com.example.user.learnjapanesevocabulary.listening.ListeningActivity;
 import com.example.user.learnjapanesevocabulary.model.Lesson;
 import com.example.user.learnjapanesevocabulary.model.Version;
 import com.example.user.learnjapanesevocabulary.model.Vocabulary;
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private View mTempViewLesson;
     private NavigationView mNavigationView;
     private ArrayList<Lesson> data = new ArrayList<>();
-    private Button btnLearn, btnPractice;
+    private Button btnLearn, btnPractice, btnListening;
     private Realm realm;
     private RMS rms;
 
@@ -128,21 +129,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnLearn:
                 Intent intent = new Intent(MainActivity.this, LearnActivity.class);
                 startActivity(intent);
-
-//                int c = 0;
-//                for (int i = 0; i < data.size(); i++) {
-//                    for (int j = 0; j < data.get(i).getmVocabularyList().size(); j++) {
-//                        System.out.println(data.get(i).getmVocabularyList().get(j).getKanji());
-//                        c++;
-//                    }
-//                }
-//                System.out.println(c);
-
                 break;
 
             case R.id.btnPractice:
                 Intent intent2 = new Intent(MainActivity.this, PracticeActivity.class);
                 startActivity(intent2);
+                break;
+
+            case R.id.btnListeningPractice:
+                Intent intent3 = new Intent(MainActivity.this, ListeningActivity.class);
+                startActivity(intent3);
                 break;
         }
     }
@@ -260,6 +256,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnLearn.setOnClickListener(this);
         btnPractice = (Button) findViewById(R.id.btnPractice);
         btnPractice.setOnClickListener(this);
+        btnListening = (Button) findViewById(R.id.btnListeningPractice);
+        btnListening.setOnClickListener(this);
     }
 
     @Override

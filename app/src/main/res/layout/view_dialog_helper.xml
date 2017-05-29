@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:paddingLeft="@dimen/dialog_help_parent_padding"
+    android:paddingRight="@dimen/dialog_help_parent_padding">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_help">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mTvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:padding="@dimen/dialog_help_child_padding"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dialog_help_size_text_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/mTvTitle"
+            android:background="@color/colorPrimary" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mTvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/mTvTitle"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dialog_help_text_content_margin_top"
+            android:gravity="start"
+            android:lineSpacingExtra="1.5dp"
+            android:paddingLeft="@dimen/dialog_help_child_padding"
+            android:paddingRight="@dimen/dialog_help_child_padding"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dialog_help_size_text_content" />
+
+
+        <CheckBox
+            android:id="@+id/cbShowDialog"
+            android:layout_width="@dimen/dialog_help_height_button_ok"
+            android:layout_height="@dimen/dialog_help_height_button_ok"
+            android:layout_below="@+id/mTvContent"
+            android:gravity="center" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_help_height_button_ok"
+            android:layout_below="@+id/mTvContent"
+            android:layout_toRightOf="@id/cbShowDialog"
+            android:gravity="center"
+            android:text="Don't show again"
+            android:textColor="@android:color/black" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/mTvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_help_height_button_ok"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mTvContent"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bg_dialog_help_button_ok"
+            android:gravity="center"
+            android:text="OK"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

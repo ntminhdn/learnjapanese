@@ -20,6 +20,7 @@
         <activity android:name=".learn.LearnActivity" android:label="Learning" />
         <activity android:name=".practice.PracticeActivity" android:label="Practice" />
         <activity android:name=".listening.ListeningActivity" android:label="Listening" />
+        <activity android:name=".listening.ListeningDetailActivity" android:label="Listening Detail" />
         <activity android:name=".exam.ExamActivity" />
         <activity android:name=".examcomplex.ExamComplexActivity" />
     </application>
